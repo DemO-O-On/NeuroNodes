@@ -1,0 +1,166 @@
+---Input object
+shape: None; batch_size: None; dtype: None; sparse: None; tensor: None; ragged: None; type_spec: None
+---Dense layer
+units: INPUT; activation: None; use_bias: True; kernel_initializer: "glorot_uniform"; bias_initializer: "zeros"; kernel_regularizer: None; bias_regularizer: None; activity_regularizer: None; kernel_constraint: None; bias_constraint: None
+---Activation layer
+activation: INPUT
+---Embedding layer
+input_dim: INPUT; output_dim: INPUT; embeddings_initializer: "uniform"; embeddings_regularizer: None; activity_regularizer: None; embeddings_constraint: None; mask_zero: False; input_length: None
+---Masking layer
+mask_value: 0.0
+---Lambda layer
+function: INPUT; output_shape: None; mask: None; arguments: None
+---Output layer
+file: None
+---Conv1D layer
+filters: INPUT; kernel_size: INPUT; strides: 1; padding: "valid"; data_format: "channels_last"; dilation_rate: 1; groups: 1; activation: None; use_bias: True; kernel_initializer: "glorot_uniform"; bias_initializer: "zeros"; kernel_regularizer: None; bias_regularizer: None; activity_regularizer: None; kernel_constraint: None; bias_constraint: None
+---Conv2D layer
+filters: INPUT; kernel_size: INPUT; strides: (1,1); padding: "valid"; data_format: None; dilation_rate: (1,1); groups: 1; activation: None; use_bias: True; kernel_initializer: "glorot_uniform"; bias_initializer: "zeros"; kernel_regularizer: None; bias_regularizer: None; activity_regularizer: None; kernel_constraint: None; bias_constraint: None
+---Conv3D layer
+filters: INPUT; kernel_size: INPUT; strides: (1,1,1); padding: "valid"; data_format: None; dilation_rate: (1,1,1); groups: 1; activation: None; use_bias: True; kernel_initializer: "glorot_uniform"; bias_initializer: "zeros"; kernel_regularizer: None; bias_regularizer: None; activity_regularizer: None; kernel_constraint: None; bias_constraint: None
+---SeparableConv1D layer
+filters: INPUT; kernel_size: INPUT; strides: 1; padding: "valid"; data_format: None; dilation_rate: 1; depth_multiplier: 1; activation: None; use_bias: True; depthwise_initializer: "glorot_uniform"; pointwise_initializer: "glorot_uniform"; bias_initializer: "zeros"; depthwise_regularizer: None; pointwise_regularizer: None; bias_regularizer: None; activity_regularizer: None; depthwise_constraint: None; pointwise_constraint: None; bias_constraint: None
+---SeparableConv2D layer
+filters: INPUT; kernel_size: INPUT; strides: (1,1); padding: "valid"; data_format: None; dilation_rate: (1,1); depth_multiplier: 1; activation: None; use_bias: True; depthwise_initializer: "glorot_uniform"; pointwise_initializer: "glorot_uniform"; bias_initializer: "zeros"; depthwise_regularizer: None; pointwise_regularizer: None; bias_regularizer: None; activity_regularizer: None; depthwise_constraint: None; pointwise_constraint: None; bias_constraint: None
+---DepthwiseConv2D layer
+kernel_size: INPUT; strides: (1,1); padding: "valid"; depth_multiplier: 1; data_format: None; dilation_rate: (1,1); activation: None; use_bias: True; depthwise_initializer: "glorot_uniform"; bias_initializer: "zeros"; depthwise_regularizer: None; bias_regularizer: None; activity_regularizer: None; depthwise_constraint: None; bias_constraint: None
+---Conv2DTranspose layer
+filters: INPUT; kernel_size: INPUT; strides: (1,1); padding: "valid"; output_padding: None; data_format: None; dilation_rate: (1,1); activation: None; use_bias: True; kernel_initializer: "glorot_uniform"; bias_initializer: "zeros"; kernel_regularizer: None; bias_regularizer: None; activity_regularizer: None; kernel_constraint: None; bias_constraint: None
+---Conv3DTranspose layer
+filters: INPUT; kernel_size: INPUT; strides: (1,1,1); padding: "valid"; output_padding: None; data_format: None; dilation_rate: (1,1,1); activation: None; use_bias: True; kernel_initializer: "glorot_uniform"; bias_initializer: "zeros"; kernel_regularizer: None; bias_regularizer: None; activity_regularizer: None; kernel_constraint: None; bias_constraint: None
+---MaxPooling1D layer
+pool_size: 2; strides: None; padding: "valid"; data_format: "channels_last"
+---MaxPooling2D layer
+pool_size: (2,2); strides: None; padding: "valid"; data_format: None
+---MaxPooling3D layer
+pool_size: (2,2,2); strides: None; padding: "valid"; data_format: None
+---AveragePooling1D layer
+pool_size: 2; strides: None; padding: "valid"; data_format: "channels_last"
+---AveragePooling2D layer
+pool_size: (2,2); strides: None; padding: "valid"; data_format: None
+---AveragePooling3D layer
+pool_size: (2,2,2); strides: None; padding: "valid"; data_format: None
+---GlobalMaxPooling1D layer
+data_format: "channels_last"; keepdims: False
+---GlobalMaxPooling2D layer
+data_format: None; keepdims: False
+---GlobalMaxPooling3D layer
+data_format: None; keepdims: False
+---GlobalAveragePooling1D layer
+data_format: "channels_last"
+---GlobalAveragePooling2D layer
+data_format: None; keepdims: False
+---GlobalAveragePooling3D layer
+data_format: None; keepdims: False
+---LSTM layer
+units: INPUT; activation: "tanh"; recurrent_activation: "sigmoid"; use_bias: True; kernel_initializer: "glorot_uniform"; recurrent_initializer: "orthogonal"; bias_initializer: "zeros"; unit_forget_bias: True; kernel_regularizer: None; recurrent_regularizer: None; bias_regularizer: None; activity_regularizer: None; kernel_constraint: None; recurrent_constraint: None; bias_constraint: None; dropout: 0.0; recurrent_dropout: 0.0; return_sequences: False; return_state: False; go_backwards: False; stateful: False; time_major: False; unroll: False
+---GRU layer
+units: INPUT; activation: "tanh"; recurrent_activation: "sigmoid"; use_bias: True; kernel_initializer: "glorot_uniform"; recurrent_initializer: "orthogonal"; bias_initializer: "zeros"; kernel_regularizer: None; recurrent_regularizer: None; bias_regularizer: None; activity_regularizer: None; kernel_constraint: None; recurrent_constraint: None; bias_constraint: None; dropout: 0.0; recurrent_dropout: 0.0; return_sequences: False; return_state: False; go_backwards: False; stateful: False; unroll: False; time_major: False; reset_after: True
+---SimpleRNN layer
+units: INPUT; activation: "tanh"; use_bias: True; kernel_initializer: "glorot_uniform"; recurrent_initializer: "orthogonal"; bias_initializer: "zeros"; kernel_regularizer: None; recurrent_regularizer: None; bias_regularizer: None; activity_regularizer: None; kernel_constraint: None; recurrent_constraint: None; bias_constraint: None; dropout: 0.0; recurrent_dropout: 0.0; return_sequences: False; return_state: False; go_backwards: False; stateful: False; unroll: False
+---TimeDistributed layer
+layer: INPUT
+---Bidirectional layer
+layer: INPUT; merge_mode: "concat"; weights: None; backward_layer: None
+---ConvLSTM2D layer
+filters: INPUT; kernel_size: INPUT; strides: (1,1); padding: "valid"; data_format: None; dilation_rate: (1,1); activation: "tanh"; recurrent_activation: "hard_sigmoid"; use_bias: True; kernel_initializer: "glorot_uniform"; recurrent_initializer: "orthogonal"; bias_initializer: "zeros"; unit_forget_bias: True; kernel_regularizer: None; recurrent_regularizer: None; bias_regularizer: None; activity_regularizer: None; kernel_constraint: None; recurrent_constraint: None; bias_constraint: None; return_sequences: False; return_state: False; go_backwards: False; stateful: False; dropout: 0.0; recurrent_dropout: 0.0
+---Base RNN layer
+cell: INPUT; return_sequences: False; return_state: False; go_backwards: False; stateful: False; unroll: False; time_major: False
+---BatchNormalization layer
+axis: 1; momentum: 0.99; epsilon: 0.001; center: True; scale: True; beta_initializer: "zeros"; gamma_initializer: "ones"; moving_mean_initializer: "zeros"; moving_variance_initializer: "ones"; beta_regularizer: None; gamma_regularizer: None; beta_constraint: None; gamma_constraint: None
+---LayerNormalization layer
+axis: 1; epsilon: 0.001; center: True; scale: True; beta_initializer: "zeros"; gamma_initializer: "ones"; beta_regularizer: None; gamma_regularizer: None; beta_constraint: None; gamma_constraint: None
+---Dropout layer
+rate: INPUT; noise_shape: None; seed: None
+---SpatialDropout1D layer
+rate: INPUT
+---SpatialDropout2D layer
+rate: INPUT; data_format: None
+---SpatialDropout3D layer
+rate: INPUT; data_format: None
+---GaussianDropout layer
+rate: INPUT
+---GaussianNoise layer
+stddev: INPUT
+---ActivityRegularization layer
+l1: 0.0; l2: 0.0
+---AlphaDropout layer
+rate: INPUT; noise_shape: None; seed: None
+---MultiHeadAttention layer
+num_heads: INPUT; key_dim: INPUT; value_dim: None; dropout: 0.0; use_bias: True; output_shape: None; attention_axes: None; kernel_initializer: "glorot_uniform"; bias_initializer: "zeros"; kernel_regularizer: None; bias_regularizer: None; activity_regularizer: None; kernel_constraint: None; bias_constraint: None
+---Attention layer
+use_scale: False
+---AdditiveAttention layer
+use_scale: True
+---Reshape layer
+target_shape: INPUT
+---Flatten layer
+data_format: None
+---RepeatVector layer
+n: INPUT
+---Permute layer
+dims: INPUT
+---Cropping1D layer
+cropping: (1,1)
+---Cropping2D layer
+cropping: ((0,0), (0,0)); data_format: None
+---Cropping3D layer
+cropping: ((1,1), (1,1), (1,1)); data_format: None
+---UpSampling1D layer
+size: 2
+---UpSampling2D layer
+size: (2,2); data_format: None; interpolation: "nearest"
+---UpSampling3D layer
+size: (2,2,2); data_format: None
+---ZeroPadding1D layer
+padding: 1
+---ZeroPadding2D layer
+padding: (1,1); data_format: None
+---ZeroPadding3D layer
+padding: (1,1,1); data_format: None
+---Concatenate layer
+axis: 1
+---Average layer
+
+---Maximum layer
+
+---Minimum layer
+
+---Add layer
+
+---Subtract layer
+
+---Multiply layer
+
+---Dot layer
+axes: INPUT; normalize: False
+---LocallyConnected1D layer
+filters: INPUT; kernel_size: INPUT; strides: 1; padding: "valid"; data_format: None; activation: None; use_bias: True; kernel_initializer: "glorot_uniform"; bias_initializer: "zeros"; kernel_regularizer: None; bias_regularizer: None; activity_regularizer: None; kernel_constraint: None; bias_constraint: None; implementation: 1
+---LocallyConnected2D layer
+filters: INPUT; kernel_size: INPUT; strides: (1,1); padding: "valid"; data_format: None; activation: None; use_bias: True; kernel_initializer: "glorot_uniform"; bias_initializer: "zeros"; kernel_regularizer: None; bias_regularizer: None; activity_regularizer: None; kernel_constraint: None; bias_constraint: None; implementation: 1
+---ReLU layer
+max_value: None; negative_slope: 0; threshold: 0
+---Softmax layer
+axis: 1
+---LeakyReLU layer
+alpha: 0.3
+---PReLU layer
+alpha_initializer: "zeros"; alpha_regularizer: None; alpha_constraint: None; shared_axes: None
+---ELU layer
+alpha: 1.0
+---ThresholdedReLU layer
+theta: 1.0
+---Model
+inputs: X_input; outputs: ; name: INPUT
+---Compile
+optimizer: "adam"; loss: "binary_crossentropy"; metrics: ['accuracy']; loss_weights: None; weighted_metrics: None; run_eagerly: None; steps_per_execution: None
+---Fit
+x: None; y: None; batch_size: 1; epochs: 1; verbose: "auto"; callbacks: None; validation_split: 0.0; validation_data: None; shuffle: True; class_weight: None; sample_weight: None; initial_epoch: 0; steps_per_epoch: None; validation_steps: None; validation_batch_size: None; validation_freq: 1; max_queue_size: 10; workers: 1; use_multiprocessing: False
+---Evaluate
+x: None; y: None; batch_size: None; verbose: "auto"; sample_weight: None; steps: None; callbacks: None; max_queue_size: 10; workers: 1; use_multiprocessing: False; return_dict: False
+---Predict
+x: None; batch_size: None; verbose: "auto"; steps: None; callbacks: None; max_queue_size: 10; workers: 1; use_multiprocessing: False
+---Save model
+include_optimizer: True; save_format: None; signatures: None; options: None; save_traces: True
+---Save weights
+include_optimizer: True; save_format: None; signatures: None; options: None; save_traces: True

@@ -1,0 +1,106 @@
+---
+Core layers
+Input object
+Dense layer
+Activation layer
+Embedding layer
+Masking layer
+Lambda layer
+---
+Convolution layers
+Conv1D layer
+Conv2D layer
+Conv3D layer
+SeparableConv1D layer
+SeparableConv2D layer
+DepthwiseConv2D layer
+Conv2DTranspose layer
+Conv3DTranspose layer
+---
+Pooling layers
+MaxPooling1D layer
+MaxPooling2D layer
+MaxPooling3D layer
+AveragePooling1D layer
+AveragePooling2D layer
+AveragePooling3D layer
+GlobalMaxPooling1D layer
+GlobalMaxPooling2D layer
+GlobalMaxPooling3D layer
+GlobalAveragePooling1D layer
+GlobalAveragePooling2D layer
+GlobalAveragePooling3D layer
+---
+Recurrent layers
+LSTM layer
+GRU layer
+SimpleRNN layer
+TimeDistributed layer
+Bidirectional layer
+ConvLSTM2D layer
+Base RNN layer
+---
+Normalization layers
+BatchNormalization layer
+LayerNormalization layer
+---
+Regularization layers
+Dropout layer
+SpatialDropout1D layer
+SpatialDropout2D layer
+SpatialDropout3D layer
+GaussianDropout layer
+GaussianNoise layer
+ActivityRegularization layer
+AlphaDropout layer
+---
+Attention layers
+MultiHeadAttention layer
+Attention layer
+AdditiveAttention layer
+---
+Reshaping layers
+Reshape layer
+Flatten layer
+RepeatVector layer
+Permute layer
+Cropping1D layer
+Cropping2D layer
+Cropping3D layer
+UpSampling1D layer
+UpSampling2D layer
+UpSampling3D layer
+ZeroPadding1D layer
+ZeroPadding2D layer
+ZeroPadding3D layer
+---
+Merging layers
+Concatenate layer
+Average layer
+Maximum layer
+Minimum layer
+Add layer
+Subtract layer
+Multiply layer
+Dot layer
+---
+Locally-connected layers
+LocallyConnected1D layer
+LocallyConnected2D layer
+---
+Activation layers
+ReLU layer
+Softmax layer
+LeakyReLU layer
+PReLU layer
+ELU layer
+ThresholdedReLU layer
+---
+Model
+Model
+Compile
+Fit
+Evaluate
+Predict
+Save model
+Save weights
